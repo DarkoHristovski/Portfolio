@@ -8,7 +8,7 @@ const HeroSection = ({data}) =>{
           <div className="hero-section-text flex flex-center">
             <div className="hero-section-text-content">
             <h1>Im {data.name}<span> {data.lastName}</span></h1>
-            <h3>{data.about}</h3>
+            <h3>{data.description}</h3>
             </div>
           </div>
           <div className="hero-section-image flex flex-center hero-img">

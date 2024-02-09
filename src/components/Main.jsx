@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import HeroSection from "./HeroSection";
+import About from "./About/About";
 import developer from "../userProfil";
 
 const Main = () =>{
@@ -7,6 +8,7 @@ const Main = () =>{
     return(
         <main>
         <HeroSection data={data}/>
+        <About data={data}/>
         </main>
     )
 }
