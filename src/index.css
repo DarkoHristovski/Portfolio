@@ -3,14 +3,66 @@
   padding: 0;
   margin: 0;
 }
+
+html{
+  font-size: 10px;
+}
+
+body{
+color: #4fb5a9;
+font-size: 2.4rem;
+font-weight: 400;
+line-height: 1.27;
+letter-spacing: .88px;
+font-family: 'Chillax'
+}
+
+ h1{ 
+font-size: 9rem;
+font-weight: 300;
+line-height: 1.1;
+margin-bottom: .3em;
+}
+
+ h2{
+font-size: 6rem;
+font-weight: 300;
+line-height: 1.25;
+margin-bottom: .5em;
+ }
+
+ h3{
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.32;
+  margin-bottom: .8em;
+ }
+
+ h4{}
+ h5{}
+ h6{}
+
+ ul{
+  list-style: none;
+ }
+
+
 .container {
   max-width: 1300px;
+  margin: auto;
+}
+
+.section{
+  background-color: #000000;
 }
 
 svg {
   height: 70px;
   width: 70px;
 }
+
+.text-center{ text-align: center;}
+
 
 .slider-wrapper {
   padding: 50px;
@@ -40,12 +92,30 @@ svg {
   color: #4fb5a9;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
 .slick-track > div {
   margin: 0 30px;
-  border: 1px solid #4fb5a9;
   border-radius: 5px;
   padding: 5px;
 }
+
+
+
+
+
+
 
 
 .hero-section {
@@ -70,27 +140,6 @@ border-radius: 6px;
 height: 100%;
 width: 100%;
 object-fit: cover;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
-.section-padding {
-  padding: 100px 0;
-}
-
-h1 {
-  font-size: 90px;
-  font-weight: 500;
-  color: #4fb5a9;
-  line-height: 1;
-  margin-bottom: 30px;
 }
 
 .hero-section-text-content {

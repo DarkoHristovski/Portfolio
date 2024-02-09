@@ -1,0 +1,28 @@
+.about-stack{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.about-stack .card{
+    border: 1px solid #4fb5a9;
+    padding:40px 10px;
+    border-radius: 5px;
+}
+
+.img-wrapper{
+    margin-bottom: 20px;
+}
+
+
+.about-stack .card-middle{
+    margin: 20px 0;
+}
+
+.about-stack .card-middle li,
+.about-stack .card-bottom li{
+    display: inline;
+    margin: 0 5px;
+    font-size: 2rem;
+}
