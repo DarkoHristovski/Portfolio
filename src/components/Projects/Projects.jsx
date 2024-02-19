@@ -1,6 +1,31 @@
 import { useState } from "react";
-import projectsList from "../../projectsList";
 import "./projects.css";
+
+
+const projectsList=[
+    {
+      id:1,
+        name:"FitLife",
+        img:'/src/assets/fitLife.png',
+        description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
+        technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
+      },
+      {
+        id:2,
+        name:"WeatherApp",
+        img:'/src/assets/fitLife.png',
+        description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
+        technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
+      },
+      {
+        id:3,
+        name:"ToDoApp",
+        img:'/src/assets/fitLife.png',
+        description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
+        technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
+      }
+]
+
 
 const Projects = () => {
   const [project] = useState(projectsList);
