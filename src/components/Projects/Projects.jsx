@@ -6,21 +6,21 @@ const projectsList=[
     {
       id:1,
         name:"FitLife",
-        img:'/src/assets/fitLife.png',
+        img:'https://res-console.cloudinary.com/dute4bfhz/thumbnails/v1/image/upload/v1708351339/Zml0bGlmZV9zd21iN3I=/preview',
         description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
         technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
       },
       {
         id:2,
         name:"WeatherApp",
-        img:'/src/assets/fitLife.png',
+        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708351468/todo-app_mnhsel.png',
         description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
         technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
       },
       {
         id:3,
         name:"ToDoApp",
-        img:'/src/assets/fitLife.png',
+        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708351468/todo-app_mnhsel.png',
         description: "A fully functional e-commerce website built with React.js and Node.js. Integrated with a payment gateway for secure transactions.",
         technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"]
       }
