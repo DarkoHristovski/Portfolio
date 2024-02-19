@@ -4,9 +4,9 @@ import './about.css'
 const About = ({data}) =>{
   {console.log(data)}
     return(       
-        <section className="section section-padding text-center">
+        <section id='about' className="section section-padding text-center">
           <div className="container"> 
-           <h2>About</h2>
+           <h2>About me</h2>
             <p>{data.about}</p>
             <div className="about-stack">
                 {data.stacks.map(x=>{
@@ -21,21 +21,21 @@ const About = ({data}) =>{
                 <div className='card-middle'>
                 <h5>Languages</h5>
                   <ul>
-                 {x.languages.map(y=>{
+                 {x.languages.map((y,index)=>{
                   return(
-                   <li>{y}</li>
+                   <li key={y}><span>{y}{index<y.length-1 ? ',' : ''}</span></li>
                   )
-                 }).reduce((prev, curr) => [prev,',',curr])}
+                 })}
                  </ul>
                 </div>
                 <div className="card-bottom">
                   <h5>Tools i use</h5>
                   <ul>
-                 {x.tools.map(y=>{
+                 {x.tools.map((y,index)=>{
                   return(
-                   <li>{y}</li>
+                   <li key={x}><span>{y}{index<y.length-1 ? ',' : ''}</span></li>
                   )
-                 }).reduce((prev, curr) => [prev, ',' ,curr])}
+                 })}
                  </ul>
                 </div>
                 </div>

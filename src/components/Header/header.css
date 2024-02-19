@@ -1,0 +1,23 @@
+header{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color:#0a192f;
+    z-index: 99;
+}
+
+header li{
+   margin: 0 5px;
+}
+
+header a{
+    color: #ccd6f6;
+    text-decoration: none;
+}
+header button{
+   margin-left: 5px;
+}
+
+.header-content{
+    justify-content: space-between;
+}

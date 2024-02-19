@@ -1,5 +1,3 @@
-
-
 const developer = {
   name: "Darko",
   lastName: "Hristovski",
