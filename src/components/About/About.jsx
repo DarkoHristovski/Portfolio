@@ -1,4 +1,4 @@
-
+import frontend from '../../assets/frontend.svg'
 import './about.css'
 
 
@@ -11,7 +11,7 @@ const developer = {
   stacks: [
     {
       id:1,
-      img:'/src/assets/frontend.svg',
+      img:'../../assets/frontend.svg',
       name: "Front-End Development",
       languages: ["HTML","CSS3","JavaScript", "React"],
       tools: ["Bootstrap", "Tailwind"],
@@ -55,11 +55,13 @@ const About = () =>{
           <div className="container"> 
            <h2>About me</h2>
             <p>{developer.about}</p>
+           
             <div className="about-stack">
                 {developer.stacks.map(x=>{
               return(  
                 <div key={x.id} className="card">
                 <div className='card-top'>
+                <img src={frontend} alt="" />
                  <div className="img-wrapper">
                    <img src={x.img} alt="logo" />
                  </div>
