@@ -3,7 +3,7 @@
     display: grid;
     margin: 50px 0px 0px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 15px;
     justify-content: center;
 }
@@ -35,5 +35,13 @@
 
 @media only screen and (max-width: 767px){
 
-
+    .about-stack{
+        margin-top: 60px;
+        display: grid;
+        margin: 50px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 15px;
+        justify-content: center;
+    }
 }

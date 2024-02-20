@@ -13,6 +13,10 @@
   background-color: #112240;
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
+
+
+
+
 .project:last-child {
   margin-bottom: 0;
 }
@@ -53,6 +57,14 @@ padding: 0;
   text-decoration: none;
   display: flex;
   padding:35px 20px;
+  border: 1px solid #0a192f;
+  border-radius: 8px;
+}
+
+.project a:hover{
+  text-decoration: none;
+  border: 1px solid #64ffda;
+ 
 }
 
 
@@ -60,6 +72,7 @@ padding: 0;
   .project a {
   flex-wrap: wrap;
   }
+
   .projects-section .img-wrapper,
   .projects-section .project-info {
     width: 100%;
