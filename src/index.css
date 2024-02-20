@@ -256,3 +256,64 @@ a:hover{
   }
 
 }
+
+@media only screen and (max-width: 520px) {
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 5rem;
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 2.8rem;
+  line-height: 1.32;
+  margin-bottom: 0.8em;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.32;
+  margin-bottom: 0.8em;
+}
+
+  .hero-section-img-wrapper {
+      height: 150px;
+      width: 150px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 5.5rem;
+    line-height: 1.25;
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    font-size: 2.8rem;
+    line-height: 1.32;
+    margin-bottom: 0.8em;
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 1.32;
+    margin-bottom: 0.8em;
+  }
+
+  .hero-section-text h3 {
+    font-size: 1.8rem;
+  }
+  
+    .hero-section-img-wrapper {
+        height: 120px;
+        width: 120px;
+    }
+  }

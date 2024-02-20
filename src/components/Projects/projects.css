@@ -80,6 +80,12 @@ padding: 0;
 }
 
 @media only screen and (max-width: 767px){
+  .project a{
+    padding: 15px 10px;
+  }
 
+  .project-info {
+    padding: 10px;
+}
 
 }
