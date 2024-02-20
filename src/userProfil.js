@@ -1,7 +1,7 @@
 const developer = {
   name: "Darko",
   lastName: "Hristovski",
-  description:"A passionate web developer with expertise in front-end and back-end technologies.",
+  description:"A passionate web developer with skills in front-end and back-end technologies, ready to tackle new challenges and projects.",
   about:"I'm a passionate junior web developer specializing in React and the MERN (MongoDB, Express.js, React.js, Node.js) stack. With a strong foundation in front-end development and a knack for creating intuitive user interfaces, I strive to build engaging web applications that not only look great but also provide seamless user experiences.",
   email: "hristovski15@gmail.com",
   stacks: [

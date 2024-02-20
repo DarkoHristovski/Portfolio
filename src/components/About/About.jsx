@@ -1,9 +1,6 @@
-import frontend from '../../assets/frontend.svg'
-import backend from '../../assets/frontend.svg'
-import trello from '../../assets/frontend.svg'
+
 import './about.css'
 
-const images =[frontend,backend,trello]
 
 
 const developer = {
@@ -15,21 +12,21 @@ const developer = {
   stacks: [
     {
       id:1,
-      img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708351492/frontend_jcwarf.svg',
+      img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708380569/frontend_jmyrwu.svg',
       name: "Front-End Development",
       languages: ["HTML","CSS3","JavaScript", "React"],
       tools: ["Bootstrap", "Tailwind"],
     },
     {
       id:2,
-      img:'/src/assets/backend.svg',
+      img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708380579/backend_cwxuyr.svg',
       name: "Back-End Development",
       languages: ["Node.JS", "NoSQL", "SQL"],
       tools: ["Express", "PostgreSQL", "Mongo DB",  "GitHub", "Netfliy"],
     },
     {
       id:3,
-      img:'/src/assets/trello.svg',
+      img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708380589/trello_org5ad.svg',
       name: "Practices",
       languages: ["Agile", "SCRUM"],
       tools: ["Trello", "Slack", "Discord"],
@@ -65,10 +62,8 @@ const About = () =>{
               return(  
                 <div key={x.id} className="card">
                 <div className='card-top'>
-                <img src={frontend} alt="" />
                  <div className="img-wrapper">
                    <img src={x.img} alt="logo" />
-                  {images.map(x=> <img key={x} src = "x"/>)}
                  </div>
                 <h4><p>{x.name}</p></h4>
                 </div>
