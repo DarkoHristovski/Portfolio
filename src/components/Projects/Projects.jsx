@@ -7,7 +7,7 @@ const projectsList=[
       id:1,
         name:"FitLife",
         url:'https://fitlife-dev.onrender.com/landingPage',
-        img:'https://res-console.cloudinary.com/dute4bfhz/thumbnails/v1/image/upload/v1708351339/Zml0bGlmZV9zd21iN3I=/preview',
+        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708351339/fitlife_swmb7r.png',
         description: "This project marks the culmination of my bootcamp journey, serving as the final collaborative effort with two fellow developers. FitLife: Your personalized fitness companion! Track your workouts, set goals, and monitor progress seamlessly. With tailored exercise plans achieving your health goals has never been easier. Join the community, stay motivated, and embrace a healthier lifestyle with FitLife!",
         technologies: ["React", "Node.js", "Express.js", "MongoDB", "API"]
       },
