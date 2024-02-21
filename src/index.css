@@ -257,7 +257,13 @@ a:hover{
     line-height: 1.32;
     margin-bottom: 0.8em;
   }
-
+  .section-padding {
+    padding: 50px 0;
+}
+.icon-wrapper svg {
+ height: 50px;
+ width: 50px;
+}
 }
 
 @media only screen and (max-width: 520px) {

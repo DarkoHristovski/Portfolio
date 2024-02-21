@@ -35,22 +35,21 @@ const Contact = () => {
     <section id="contact" className="section contact section-padding">
       <div className="container">
         <h2>Get In Touch</h2>
-        <p>Looking for a skilled web developer to join your team or company?</p> 
-        <p>Let's collaborate and elevate your company's digital presence.</p>
-        <p>Get in touch to discuss how I can contribute to your projects and company!</p>
+        <h5>Looking for a skilled web developer to join your team or company?</h5> 
+        <h5>Let's collaborate and elevate your company's digital presence.</h5>
+        <h5>Get in touch to discuss how I can contribute to your projects and company!</h5>
 
         <div className="form-wrapper">
           <form ref={form} onSubmit={sendEmail}>
-            <label htmlFor="name">Name</label>
-            <input type="text" id='name' name="user_name" placeholder="Name" required="true" onChange={setNameHandler} />
-            <input type="text" name="user_email" placeholder="Email" required="true" />
+            <input type="text" id='name' name="user_name" placeholder="Name" required={true} onChange={setNameHandler} />
+            <input type="text" name="user_email" placeholder="Email" required={true} />
             <textarea
               name="message"
               id=""
               cols="30"
               rows="10"
               placeholder="Message"
-              required="true"
+              required={true}
             ></textarea>
             <button type='submit' className='btn'>Send</button>
           </form>

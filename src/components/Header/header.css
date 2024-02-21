@@ -16,11 +16,13 @@ header .logo a:hover{
   text-decoration: none;
     }
 
+    header ul{
+        margin-right: 20px;
+     }
+
 header li{
    margin: 0 8px;
 }
-
-
 
 header li a{
     color: #ccd6f6;
@@ -53,6 +55,8 @@ header button{
     cursor: pointer;
     transform: rotate(0deg);
     transition: all .3s ease;
+    background-color: transparent;
+    border: none;
 }
 
 .menu-btn::after,
@@ -121,7 +125,6 @@ header button{
 @media only screen and (max-width: 992px) {
 }
 
-
 @media only screen and (max-width: 768px) {
     div.header-left{
         display: none;
@@ -132,5 +135,8 @@ header button{
     .hero-section-image.flex.flex-center.hero-img{
         margin-top: 120px;
     }
+    header ul{
+        margin-right: 0px;
+     }
 }
 
