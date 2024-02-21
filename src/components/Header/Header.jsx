@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import cv from '../../../public/Darko_Hristovski.pdf'
 import "./header.css";
 
 const Header = () => {
@@ -31,11 +33,11 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          {/* <button type='button' className='btn'>Resume</button>*/}
+           <a href={cv} target="_blank" rel="noreferrer" className='btn'>Resume</a>
         </div>
-        <btn onClick={toggleMenu} type="button" className="menu-btn" href="/">
+        <button onClick={toggleMenu} type="button" className="menu-btn" href="/">
           <span></span>
-        </btn>
+        </button>
       </div>
     </header>
   );
