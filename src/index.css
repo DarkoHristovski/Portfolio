@@ -209,6 +209,9 @@ a{
   text-decoration: none;
   transition: all .5s ease-in;
 }
+button{
+  transition: all .5s ease-in;
+}
 
 a:hover{
   transition: all .5s ease-in;
