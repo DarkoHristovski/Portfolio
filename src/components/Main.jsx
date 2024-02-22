@@ -9,12 +9,12 @@ const Main = () =>{
     const[data] = useState(developer)
     return(
         <>
-        <main>
+       
         <HeroSection data={data}/>
         <About data={data}/>
         <Projects/>
          <Contact/>
-        </main>
+        
         </>
     )
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./projects.css";
 
 
@@ -31,17 +32,42 @@ const projectsList=[
 ]
 
 
+const fadInProjects = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
+
 const Projects = () => {
   const [project] = useState(projectsList);
   console.log(project);
   return (
     <section id="projects" className="projects-section section-padding">
-        <h2 className="text-center">Projects</h2>
+        <motion.h2
+         variants={fadInProjects}
+         initial="initial"
+         whileInView="animate"
+         viewport={{ once: true }}
+         transition={{ duration:0.3, delay:0.2 }}
+   
+        
+        className="project-title text-center">Projects</motion.h2>
       <div className="container">
-        {project.map((x) => {
+        {project.map((x,index) => {
           return (
-            <div
+            <motion.div
               key={x.id}
+              variants={fadInProjects}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{ duration:0.5, delay: index * 0.5 }}
               className="project card"
             >
               <a href={x.url} target="_blank" rel="noreferrer noopener">
@@ -56,7 +82,7 @@ const Projects = () => {
                   <p>{x.technologies.join(', ')}</p>
                 </div>
               </a>
-            </div>
+            </motion.div>
           );
         })}
       </div>

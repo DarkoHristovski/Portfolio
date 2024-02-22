@@ -5,11 +5,13 @@ footer {
 
 footer .social-networks {
   position: fixed;
-  display: flex;
+  display: none;
   bottom: 0px;
   left: 40px;
   right: auto;
 }
+
+
 
 footer .social-networks ul {
   position: relative;

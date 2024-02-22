@@ -69,6 +69,7 @@ const Footer = () => {
               </svg>
             </a>
           </li>
+          {/*
           <li>
             <a
               href="https://www.xing.com/profile/Darko_Hristovski/web_profiles"
@@ -134,6 +135,7 @@ const Footer = () => {
               </svg>
             </a>
           </li>
+        */}
         </ul>
       </div>
       <p>© 2024 Darko Hristovski</p>

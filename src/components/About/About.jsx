@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import './about.css'
 
 
@@ -35,18 +35,62 @@ const developer = {
  
 };
 
+
+
 const About = () =>{
+  const fadInAboutTitle = {
+    initial: {
+      opacity: 0,
+      translateY:50,
+      translateX:0,
+    },
+    animate: {
+      opacity: 1,
+      translateY:0,
+      translateX:0,
+    },
+  };
+
+  const fadInAboutCards = {
+    initial: {
+      opacity: 0,
+      translateY:100,
+      translateX:0,
+    },
+    animate: {
+      opacity: 1,
+      translateY:0,
+      translateX:0,
+    },
+  };
  
     return(       
-        <section id='about' className="section section-padding text-center">
+        <section id='about' className="about-section section section-padding text-center">
           <div className="container"> 
+
+          <motion.div
+           variants={fadInAboutTitle}
+           initial="initial"
+           whileInView="animate"
+           viewport={{ once: true }}
+           transition={{ duration:0.3, delay:0.2 }}
+           className="about-title"
+          >
            <h2>About me</h2>
             <p>{developer.about}</p>
-           
+            </motion.div>
+
             <div className="about-stack">
-                {developer.stacks.map(x=>{
+                {developer.stacks.map((x,index)=>{
               return(  
-                <div key={x.id} className="card">
+                <motion.div
+                variants={fadInAboutCards}
+                initial="initial"
+                whileInView="animate"
+                transition={{ duration:0.3, delay: index * 0.5 }}
+                viewport={{ once: true}}
+               
+                key={x.id} className="card">
                 <div className='card-top'>
                  <div className="img-wrapper">
                    <img src={x.img} alt="logo" />
@@ -73,7 +117,7 @@ const About = () =>{
                  })}
                  </ul>
                 </div>
-                </div>
+                </motion.div>
               )
                 })}
             </div>

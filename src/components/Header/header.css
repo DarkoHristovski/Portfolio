@@ -33,14 +33,14 @@ header li a{
 header li a:hover{
     color: #64ffda;
     text-decoration: underline;
-    transition: all .3s ease-out;
+    transition: all .9s ease-in;
 }
 
 header button{
    margin-left: 5px;
 }
 .hero-section-image.flex.flex-center.hero-img{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .header-content{
     justify-content: space-between;

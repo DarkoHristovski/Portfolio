@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 
-import cv from '../../../public/Darko_Hristovski.pdf'
+import cv from "../../../src/Darko_Hristovski.pdf";
 import "./header.css";
 
 const Header = () => {
@@ -9,33 +10,94 @@ const Header = () => {
   const toggleMenu = () => {
     setMenu((state) => !state);
   };
+
   const openMenu = menu ? "open-menu" : "";
 
-  console.log(menu);
+  const fadInNav = {
+    initial: {
+      opacity: 0,
+      translateY: -50,
+      translateX: 0,
+    },
+    animate: {
+      opacity: 1,
+      translateY: 0,
+      translateX: 0,
+    },
+  };
 
   return (
     <header className={`section ${openMenu}`}>
       <div className="container flex header-content">
-        <div className="logo">
+        <motion.div
+          variants={fadInNav}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0 }}
+          viewport={{
+            once: true,
+          }}
+          className="logo"
+        >
           <a href="/">Darko</a>
-        </div>
+        </motion.div>
         <div className="header-left flex flex-center">
           <nav className="navigation">
             <ul className="flex">
-              <li>
+              <motion.li
+                variants={fadInNav}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                transition={{ delay: 0 }}
+              >
                 <a href="#about">About</a>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                variants={fadInNav}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                transition={{ delay: 0.2 }}
+              >
                 <a href="#projects">Projects</a>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                variants={fadInNav}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                transition={{ delay: 0.4 }}
+              >
                 <a href="#contact">Contact</a>
-              </li>
+              </motion.li>
             </ul>
           </nav>
-           <a href={cv} target="_blank" rel="noreferrer" className='btn'>Resume</a>
+          <motion.a
+            variants={fadInNav}
+            initial="initial"
+            whileInView="animate"
+            transition={{delay: 0.6 }}
+            href={cv}
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+          >
+            Resume
+          </motion.a>
         </div>
-        <button onClick={toggleMenu} type="button" className="menu-btn" href="/">
+        <button
+          onClick={toggleMenu}
+          type="button"
+          className="menu-btn"
+          href="/"
+        >
           <span></span>
         </button>
       </div>
