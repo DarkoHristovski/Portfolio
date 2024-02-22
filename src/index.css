@@ -134,7 +134,7 @@ svg {
 
 
 .section-padding {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .slick-track > div {
@@ -189,6 +189,51 @@ svg {
   font-size: 2rem;
 }
 
+
+.hero-section .social-networks {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+}
+
+.hero-section .social-networks a g path{
+  stroke: red
+}
+
+.hero-section .social-networks a svg:hover,
+.hero-section .social-networks a path:hover{
+ stroke:#64ffda;
+}
+
+
+
+.hero-section .social-networks ul {
+  position: relative;
+  padding-bottom: 100px;
+}
+.hero-section .social-networks ul::after {
+  position: absolute;
+  content: "";
+  height: 90px;
+  background-color: #ccd6f6;
+  width: 1px;
+  bottom: 0;
+  left: 20px;
+}
+
+.hero-section .social-networks a {
+  color: #ccd6f6;
+  padding: 10px;
+  display: block;
+}
+
+.hero-section .social-networks svg {
+  height: 25px;
+  width: 25px;
+}
+
 .btn{
   padding:10px 15px;
   border:1px solid #64ffda;
@@ -207,16 +252,35 @@ svg {
 a{
   color: #64ffda;
   text-decoration: none;
-  transition: all .5s ease-in;
+  transition: all .3s ease-out;
 }
 button{
-  transition: all .5s ease-in;
+  transition: all .3s ease-out;
 }
 
 a:hover{
   transition: all .5s ease-in;
   text-decoration: underline
 }
+
+header li,
+header .logo,
+.about-title,
+.slider-wrapper,
+.about-section .about-title,
+.about-section .card,
+.projects-section .card,
+.project-title,
+.contact-title,
+.hero-content,
+.hero-section-social-networks{
+transition: all .5s ease-out;
+-webkit-transition: all .5s ease-out;
+-moz-transition: all .5s ease-out;
+-webkit-backface-visibility: hidden;
+}
+
+
 
 @media only screen and (max-width: 1080px) {
   .container {
@@ -257,7 +321,16 @@ a:hover{
     line-height: 1.32;
     margin-bottom: 0.8em;
   }
-
+  .section-padding {
+    padding: 50px 0;
+}
+.icon-wrapper svg {
+ height: 50px;
+ width: 50px;
+}
+.hero-section .social-networks{
+  display:none;
+}
 }
 
 @media only screen and (max-width: 520px) {

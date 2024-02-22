@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion"
 
 const IconSlider = () => {
   var settings = {
@@ -40,8 +41,26 @@ const IconSlider = () => {
       }
     ]
   };
+
+  const fadInSlider = {
+    initial: {
+      opacity: 0,
+  
+      
+    },
+    animate: {
+      opacity: 1,
+    
+    },
+  };
   return (
-    <section className="slider-wrapper">
+    <motion.section
+    variants={fadInSlider}
+    initial="initial"
+    whileInView="animate"
+    viewport={{ once: true }}
+    transition={{ duration:0.5, delay: 2.5 }}
+    className="slider-wrapper">
       <div className="container">
       <Slider {...settings}>
         <div>
@@ -149,7 +168,7 @@ const IconSlider = () => {
        
       </Slider>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
