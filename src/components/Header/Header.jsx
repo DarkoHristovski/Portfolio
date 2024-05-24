@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import cv from "../../../src/Darko_Hristovski.pdf";
+import cv from "../../../src/assets/Darko Hristovski Lebenslauf.pdf";
 import "./header.css";
 
 const Header = () => {
