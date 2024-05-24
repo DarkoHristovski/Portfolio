@@ -84,6 +84,9 @@ const Header = () => {
             initial="initial"
             whileInView="animate"
             transition={{delay: 0.6 }}
+            viewport={{
+              once: true,
+            }}
             href={cv}
             target="_blank"
             rel="noreferrer"
