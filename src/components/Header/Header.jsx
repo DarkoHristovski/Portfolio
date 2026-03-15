@@ -92,7 +92,7 @@ const Header = () => {
             rel="noreferrer"
             className="btn"
           >
-            Resume
+            Resume (CV)
           </motion.a>
         </div>
         <button
