@@ -4,14 +4,31 @@ import "./projects.css";
 
 
 const projectsList=[
-   /* {
+  {
+    id:3,
+    name:"MovieApp",
+    url:'https://movie-friend.netlify.app/',
+    img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708384736/movieapp_uivufk.png',
+    description: "Our React Movie CRUD app simplifies managing movie data by providing Create, Read, Update, and Delete functionalities. With an intuitive user interface, users can effortlessly add new movies, view existing ones, update details, and remove entries. Seamlessly integrating React components, state management, and API calls, our app offers a seamless experience for both users and developers.",
+    technologies: ["HTML5","CSS3","React JS", "Headless CMS", "API"]
+  },
+    {
+
       id:1,
         name:"FitLife",
         url:'https://fitlife-dev.onrender.com/landingPage',
         img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708351339/fitlife_swmb7r.png',
         description: "This project marks the culmination of my bootcamp journey, serving as the final collaborative effort with two fellow developers. FitLife: Your personalized fitness companion! Track your workouts, set goals, and monitor progress seamlessly. With tailored exercise plans achieving your health goals has never been easier. Join the community, stay motivated, and embrace a healthier lifestyle with FitLife!",
         technologies: ["React JS", "Node.js", "Express.js", "MongoDB", "API"]
-      },*/
+      },
+      {
+        id:10,
+        name:"Tenzie App",
+        url:"https://tenzi-app.netlify.app/",
+        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1773605597/advice-generator_w7twdm_1_1_tjjxjd.png',
+        description: "Tenzies is a fun and interactive dice game where the goal is to roll until all dice display the same number. Players can strategically hold selected dice while re-rolling the others, adding a simple layer of strategy to the gameplay. The project highlights core React concepts such as state management, component-based architecture, and dynamic UI updates.",
+        technologies: ["HTML5","CSS3","React JS"]
+      },
       {
         id:9,
         name:"Advice Generator",
@@ -28,14 +45,15 @@ const projectsList=[
         description: "The Todo app is a CRUD (Create, Read, Update, Delete) application, designed to offer full control over your tasks. With CRUD functionality, you can effortlessly create new tasks, view existing ones, update their status or details, and delete tasks as needed. This versatility empowers users to manage their to-do lists dynamically, ensuring a seamless and efficient task management experience.",
         technologies: ["HTML5","CSS3","React JS"]
       },
+
       {
-        id:3,
-        name:"MovieApp",
-        url:'https://movie-friend.netlify.app/',
-        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1708384736/movieapp_uivufk.png',
-        description: "Our React Movie CRUD app simplifies managing movie data by providing Create, Read, Update, and Delete functionalities. With an intuitive user interface, users can effortlessly add new movies, view existing ones, update details, and remove entries. Seamlessly integrating React components, state management, and API calls, our app offers a seamless experience for both users and developers.",
-        technologies: ["HTML5","CSS3","React JS", "Headless CMS", "API"]
-      },
+        id:999,
+        name:"Movie Hub",
+        url:'https://darko-movie-hub-app.netlify.app/',
+        img:'https://res.cloudinary.com/dute4bfhz/image/upload/v1773605609/movie-app.png',
+        description: "MovieHub is a movie discovery web application that enables users to explore popular and top-rated films using data from the TMDB API. Users can search for movies, view ratings, and access detailed pages with cast and production information. The project showcases modern front-end development practices including API integration, dynamic state management, and responsive UI design built with React and TypeScript.",
+        technologies: ["HTML5","CSS3","React JS"]
+      }
 ]
 
 
