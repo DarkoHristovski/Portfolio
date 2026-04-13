@@ -79,6 +79,8 @@ const Header = () => {
               </motion.li>
             </ul>
           </nav>
+
+{/*
           <motion.a
             variants={fadInNav}
             initial="initial"
@@ -94,6 +96,7 @@ const Header = () => {
           >
             Resume (CV)
           </motion.a>
+*/}
         </div>
         <button
           onClick={toggleMenu}
